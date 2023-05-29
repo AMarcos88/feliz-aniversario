@@ -1,0 +1,103 @@
+body{
+    font-family:'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #96b5ad;
+    color: #333333;
+}
+
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo{
+    background: none;
+    border: none;
+    width: 70px;
+    transition: 0.2s ease-in-out;
+}
+
+header .imagem-botao{
+    width: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-caracteristicas:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+main{
+    padding: 25px;
+}
+
+main .listagem-caracteristicas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-caracteristicas{
+    background-color: #d8e3ec;
+    width: 200px;    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-caracteristicas:hover{
+    background-color: #f4a1b5;
+}
+
+.modo-escuro .cartao-caracteristicas{
+    background-color: #a8a8a8;
+}
+
+main .cartao-caracteristicas .caracteristicas{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-caracteristicas .caracteristicas span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-caracteristicas .gif{
+    width: 80px;
+    height: 100px;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
